@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let topics = ['skate', 'dogs', 'animals', 'music'];
+    let topics = ['yoda', 'death star', 'luke skywalker', 'light saber', 'nyan cat', 'lulz', 'rick roll'];
     let stillImgUrl = '';
     let animateImgUrl = '';
     let gifCondition = '';
@@ -68,6 +68,7 @@ $(".search").keydown(function(event){
                 //Still & Animated Images
                 stillImgUrl = response.data[i].images.fixed_height_still.url;
                 animateImgUrl = response.data[i].images.fixed_height.url;
+                console.log(animateImgUrl);
                 //rating
                 let rating = response.data[i].rating;
                 //Assign image element to newImg variable
